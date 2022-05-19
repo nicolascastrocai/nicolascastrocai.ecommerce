@@ -1,0 +1,48 @@
+
+<main class="main-body">
+    <section class="section-principal-contact">
+        <form class="form-contact" action="contacto.php">
+            <h1 class="form-contact__header">Adelante, te escuchamos.</h1>
+            <div class="form-contact__input-text-container">
+                <div class="form-contact__input-text">
+                    <label for="nombre">Nombre completo</label>
+                    <input id="nombre" name="nombre" required="" minlength="3" maxlength="20">
+                </div>
+                <div class="form-contact__input-text">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required="">
+                </div>
+                <div class="form-contact__input-text">
+                    <label for="tel">Telefono</label>
+                    <input type="tel" id="tel" name="tel" required="">
+                </div>
+                <div class="form-contact__input-text">
+                    <label for="area-int">Area de interes</label>
+                    <input id="area-int" name="email" required="">
+                </div>
+            </div>
+            <div class="form-contact__textarea">
+                <label for="help">¿Cómo podemos ayudarte?</label>
+                <textarea id="help" name="help" required=""></textarea>
+            </div>
+            <div class="form-contact__input-submit">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    <section class="section-contact">
+        <div class="section-contact__title">
+            Suscríbete a nuestro <span>boletín</span>
+        </div>
+        <form class="section-contact__subscribe" action="subscribe.php">
+            <input class="field-subscribe" type="email" id="usuario" name="usuario" placeholder="Dirección de e-mail">
+            <input class="buttom-subscribe" type="submit" value="Suscribir">
+        </form>
+        <div class="section-contact__social-icons">
+            <a href="https://web.whatsapp.com/send?phone=011-1234-5678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="http://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+</main>

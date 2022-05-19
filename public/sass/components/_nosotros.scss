@@ -1,0 +1,130 @@
+.nosotros-parallax {
+    background-image: url();
+  }
+  
+  .parallax {
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .parallax, .parallax:before {
+    background: 50% 50%/cover;
+  }
+  
+  .parallax::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-color: #8a8;
+    background-image: url(https://img.freepik.com/vector-gratis/diseno-fondo-blanco-estilo-perspectiva-3d-forma-hexagonal_1017-27558.jpg?w=2000);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 150vh;
+  }
+  
+  .parallax * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+  }
+
+  .parallax-title {
+    background-color: #3858a2d8;
+    font-size: 3em;
+    font-family: "Overlock", sans-serif;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /*********************************
+              TEXTO
+  *********************************/
+  .parallax-text {
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em 0 2em 0;
+    text-align: justify;
+  }
+  
+  .parallax-text p:last-of-type {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .parallax-text {
+      width: 80%;
+    }
+  }
+  /*********************************
+              BUTTON
+  *********************************/
+  .parallax-text__button {
+    height: 100px;
+    width: 200px;
+    margin: 3em auto 0 auto;
+    text-align: center;
+  }
+  
+  .button-rollover {
+    background-color: #333;
+    border: 2px solid #ddd;
+    border-radius: 7px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button-rollover:hover {
+    background-color: transparent;
+    border: 2px solid #333;
+  }
+  
+  .roll-text {
+    display: block;
+    position: relative;
+    transition: all 420ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .roll-text:last-child {
+    color: #333;
+  }
+  
+  .button-rollover:hover .roll-text:first-child {
+    margin-top: -38px;
+  }
+  
+  body {
+    background-color: #ebeff8;
+  }
+  
